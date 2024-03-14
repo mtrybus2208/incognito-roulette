@@ -1,0 +1,8 @@
+{
+  "name": "incognito-roulette",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/incognito-roulette",
+  "projectType": "application",
+  "targets": {},
+  "tags": []
+}

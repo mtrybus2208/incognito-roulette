@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
-    "dev:ir": "nx dev incoginto-roulette"
+    "dev:ir": "nx dev incognito-roulette"
   },
   "private": true,
   "devDependencies": {
