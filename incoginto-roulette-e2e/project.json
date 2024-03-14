@@ -1,0 +1,12 @@
+{
+  "name": "incoginto-roulette-e2e",
+  "$schema": "../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "incoginto-roulette-e2e/src",
+  "targets": {
+    "lint": {
+      "executor": "@nx/eslint:lint"
+    }
+  },
+  "tags": [],
+  "implicitDependencies": ["incoginto-roulette"]
+}

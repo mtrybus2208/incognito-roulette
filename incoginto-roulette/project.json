@@ -1,0 +1,8 @@
+{
+  "name": "incoginto-roulette",
+  "$schema": "../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "incoginto-roulette",
+  "projectType": "application",
+  "targets": {},
+  "tags": []
+}
