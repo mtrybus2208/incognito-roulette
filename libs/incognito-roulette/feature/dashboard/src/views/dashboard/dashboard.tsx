@@ -5,6 +5,8 @@ import { Test } from '@mt/ui-components';
 import { useRouter } from 'next/navigation';
 import { Button } from '@mt/ui-components';
 import { Terminal } from 'lucide-react';
+import { useTheme } from 'next-themes';
+import { MoonIcon, SunIcon } from '@radix-ui/react-icons';
 import {
   Accordion,
   AccordionContent,
@@ -12,10 +14,16 @@ import {
   AccordionTrigger,
 } from '@mt/ui-components';
 import { Alert, AlertDescription, AlertTitle } from '@mt/ui-components';
+import { ModeToggle } from '@mt/ui-components';
 
 export function Dashboard() {
   return (
     <div>
+      <div style={{ padding: '40px' }}>
+        <p>LibsL</p>
+        <ModeToggle />
+      </div>
+
       <Alert>
         <Terminal className="h-4 w-4" />
         <AlertTitle>Heads up!</AlertTitle>
@@ -26,7 +34,7 @@ export function Dashboard() {
 
       <Test />
       <p>Hello from dashboard!</p>
-      <Button variant="secondary">Button</Button>
+      <Button variant="default">Button</Button>
       <h1 className="text-6xl font-bold underline">Hello, LIBRARY</h1>
       <Accordion type="single" collapsible className="w-full">
         <AccordionItem value="item-1">

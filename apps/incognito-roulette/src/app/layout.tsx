@@ -1,4 +1,5 @@
 import './global.css';
+import { ThemeProvider } from '@mt/ui-components';
 
 export const metadata = {
   title: 'Welcome to incognito-roulette',
@@ -11,8 +12,17 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className="dark">
-      <body>{children}</body>
+    <html lang="en" suppressHydrationWarning>
+      <body>
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
+        >
+          {children}
+        </ThemeProvider>
+      </body>
     </html>
   );
 }

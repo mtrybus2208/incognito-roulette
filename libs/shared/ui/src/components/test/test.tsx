@@ -1,3 +1,5 @@
+'use client';
+
 import styles from './test.module.css';
 
 /* eslint-disable-next-line */
