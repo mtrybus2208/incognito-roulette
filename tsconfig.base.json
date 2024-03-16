@@ -15,13 +15,11 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@mtrybus/dashboard": [
+      "@mt/dashboard": [
         "libs/incognito-roulette/feature/dashboard/src/index.ts"
       ],
-      "@mtrybus/dashboard/server": [
-        "libs/incognito-roulette/feature/dashboard/src/server.ts"
-      ],
-      "@mtrybus/ui-components": ["libs/shared/ui/src/index.ts"]
+      "@mt/ui-components": ["libs/shared/ui/src/index.ts"],
+      "@mt/util": ["libs/shared/util/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

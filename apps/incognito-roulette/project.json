@@ -3,6 +3,12 @@
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
   "sourceRoot": "apps/incognito-roulette",
   "projectType": "application",
-  "targets": {},
+  "targets": {
+    "build": {
+      "options": {
+        "postcssConfig": "apps/incognito-roulette/postcss.config.js"
+      }
+    }
+  },
   "tags": []
 }
